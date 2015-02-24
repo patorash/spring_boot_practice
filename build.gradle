@@ -9,18 +9,14 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:1.2.1.RELEASE")
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile("org.springframework.boot:spring-boot-starter-test:1.2.1.RELEASE")
 }
 
 sourceSets {
-    src {
-        main {
-            java
-        }
+    main {
+        java
     }
     test {
-        main {
-            java
-        }
+        java
     }
 }
